@@ -3,8 +3,10 @@ package:
   version: 1.0.0
 
 source:
-  path: ../condamwe
+  path: ./ # if the path is "condamwe" I get the "ERROR: Directory './' is not installable. Neither 'setup.py' nor 'pyproject.toml' found."
 
 build:
-  script: python setup.py install
+  noarch: python
+  number: 0
+  script: python -m pip install --no-deps --ignore-installed ./
 
