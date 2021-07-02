@@ -1,3 +1,16 @@
 package:
   name: "condamwe"
   version: 1.0.0
+
+requirements:
+  host:
+    - python =3.9
+    - pip
+    - setuptools
+
+source:
+  path: ../condamwe
+
+build:
+  script: python setup.py install
+
