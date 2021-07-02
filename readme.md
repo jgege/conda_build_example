@@ -1,3 +1,8 @@
+# Solution
+
+Read this comment:
+https://github.com/conda/conda-build/issues/4188#issuecomment-853712188
+
 # Problem description
 
 I built a package using `conda build` but I cannot import the installed module. The build process finishes without any (visible?) issues and I can install it (`conda list` shows that it is installed) but when I try to import the module I get a `No module named condamwe` error.
